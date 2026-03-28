@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Nest (no watch)",
+      "program": "${workspaceFolder}/dist/main.js",
+      "runtimeArgs": ["-r", "tsconfig-paths/register"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
